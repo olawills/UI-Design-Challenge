@@ -1,0 +1,26 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    strict-raw-types: true
+  strong-mode:
+    # implicit-casts: false
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.gen.dart"
+    - "**/*.freezed.dart"
+    - "**/*.hive.dart"
+    - "**/*.config.dart"
+  errors:
+    curly_braces_in_flow_control_structures: ignore
+    invalid_annotation_target: ignore
+    dead_code: info
+    depend_on_referenced_packages: ignore
+    no_leading_underscores_for_local_identifiers: ignore
+    constant_identifier_names: ignore
+
+linter:
+  rules:
+    prefer_const_constructors: true
+    prefer_const_constructors_in_immutables: true
+    library_private_types_in_public_api: false
